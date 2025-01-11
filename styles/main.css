@@ -1,0 +1,80 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  color: black;
+  background-color: rgb(240, 240, 240);
+}
+
+/* Products section */
+.products__container {
+  padding-top: 99px;
+  padding-bottom: 20px;
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 20px;
+}
+
+.product__card {
+  width: 240px;
+  height: 418px;
+  font-weight: 500;
+  /* margin-top: 20px; */
+  /* background-color: aqua; */
+}
+
+.product__card__item {
+  width: 240px;
+  height: 300px;
+  background-color: rgb(148, 148, 148);
+}
+
+.product__card-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.reviews {
+  display: flex;
+  gap: 9px;
+}
+
+.product__card-feedbacks {
+  color: rgb(151, 151, 151);
+}
+
+.product__card-price {
+  font-weight: 600;
+}
+
+.product__card-p {
+  font-size: 18px;
+}
+
+.product__card-img {
+  width: 20px;
+  height: 20px;
+}
+
+.product__card-text p,
+.product__card-text .reviews {
+  margin: 0;
+  padding: 3px 0px;
+}
+
+.product__card button {
+  margin-top: 5px;
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  color: white;
+  background-color: rgb(214, 141, 214);
+  cursor: pointer;
+}
+
+.product__card button:hover {
+  color: white;
+  background-color: rgb(182, 110, 182);
+}

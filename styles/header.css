@@ -1,0 +1,87 @@
+/* Header */
+.header {
+  background-color: #1a1a1a;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  height: 79px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.header__logo {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search-img {
+  width: 32px;
+}
+
+.header__search-input {
+  height: 35px;
+  width: 500px;
+  border: none;
+  font-size: 14px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.header__search-btn {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.header__search-btn:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.header__link:hover {
+  border-color: white;
+}
+
+.header__link-img {
+  width: 37px;
+  filter: invert(1);
+}
+
+.cart-quantity {
+  position: absolute;
+  margin-left: 22px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f00;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+/* Header ends */
