@@ -4,3 +4,65 @@ body {
   color: black;
   background-color: rgb(240, 240, 240);
 }
+
+.orders__container {
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  align-items: start;
+
+  /* display: flex; */
+  /* justify-content: space-between;
+  align-items: center;
+  padding: 15px 0; */
+}
+
+.orders {
+  padding-top: 99px;
+}
+
+.order__item {
+  border: 2px solid rgb(153, 153, 153);
+  width: 600px;
+  height: 300px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.order__item-img {
+  width: 300px;
+  height: 300px;
+}
+
+.order__item-text {
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
+
+.order__bill {
+  max-width: 300px;
+  margin-top: 50px;
+  border: 2px solid rgb(153, 153, 153);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__bill-btn {
+  margin-top: 5px;
+  width: 200px;
+  padding: 7px 0;
+  border: none;
+  color: white;
+  background-color: rgb(214, 141, 214);
+  cursor: pointer;
+}
+
+.order__bill-btn:hover {
+  color: white;
+  background-color: rgb(182, 110, 182);
+}
