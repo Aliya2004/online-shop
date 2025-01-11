@@ -26,7 +26,7 @@ cart.forEach((cartItem) => {
             <div class="order__item-text">
               <p>${matchingProduct.name}</p>
               <p>Цена: ${matchingProduct.price} ₽</p>
-              <p>Количество: ${matchingProduct.quantity}</p>
+              <p>Количество: ${cartItem.quantity}</p>
               <div class="order__item-btns">
                 <button class="delete-btn" data-product-id="${matchingProduct.id}" >Удалить</button>
                 <button>Добавить</button>

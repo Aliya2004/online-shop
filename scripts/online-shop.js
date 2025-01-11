@@ -1,5 +1,5 @@
 import { products } from '../data/products.js';
-import { cart } from '../data/cart.js';
+import { cart, saveToStorage } from '../data/cart.js';
 
 let productsHTML = '';
 
@@ -53,6 +53,8 @@ document.querySelectorAll('.product__card-btn').forEach((btn) => {
         id: productId,
         quantity: 1,
       });
+
+      saveToStorage();
     }
 
     let cartQuantity = 0;

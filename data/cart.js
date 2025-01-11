@@ -1,4 +1,4 @@
-export let cart = [
+export let cart = JSON.parse(localStorage.getItem('cart')) || [
   {
     id: 'first',
     quantity: 1,
@@ -9,6 +9,10 @@ export let cart = [
   },
 ];
 
+export function saveToStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
 export function removeFromCart(id) {
   let newCart = [];
   cart.forEach((cartItem) => {
@@ -17,4 +21,6 @@ export function removeFromCart(id) {
     }
   });
   cart = newCart;
+
+  saveToStorage();
 }
